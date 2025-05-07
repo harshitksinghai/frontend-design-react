@@ -1,0 +1,12 @@
+.cardContainer {
+    background-color: rgb(209, 209, 209);
+    /* min-width: 300px;
+    max-width: 500px;
+    width: 2vw;
+
+    min-height: 250px;
+    max-height: 400px;
+    height: 30vw; */
+}
+/* width: clamp(250px, 30vw, 400px);
+  height: clamp(150px, 20vh, 300px); */
