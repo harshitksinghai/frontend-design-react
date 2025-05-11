@@ -1,0 +1,8 @@
+.paper {
+    font-weight: 500;
+    font-size: small;
+    padding: 4px 8px;
+    background-color: #ededed;
+    width: fit-content;
+    border-radius: 6px;
+}

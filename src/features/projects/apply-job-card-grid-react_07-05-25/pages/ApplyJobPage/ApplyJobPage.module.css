@@ -1,4 +1,5 @@
 .pageContainer {
+  background-color: aliceblue;
   width: 100%;
   min-height: 100vh;
   max-width: 2400px; /* Prevents overly wide content on large screens */
@@ -6,16 +7,86 @@
   padding: 0 20px; /* Creates breathing room on small screens */
 }
 
-.gridSection {
-  height: 100vh;
+.applyJobSection {
+  background-color: antiquewhite;
   width: 100%;
-  background-color: antiquewhite;  
+  height: 100vh;
 }
 
-.gridContainer {
+.applyJobWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1050px;
   height: 100%;
+}
+
+.applyJobContainer {
+  background-color: rgb(250, 250, 147);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  width: 100%;
+  max-width: 1000px;
+  gap: 20px 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 916px) {
+  .applyJobContainer {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 100px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .applyJobContainer {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    gap: 15px;
+  }
+  
+  .pageContainer {
+    padding: 0 10px; /* Reduce padding on very small screens */
+  }
+}
+
+.applyJobSection {
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100vh;
+}
+
+.applyJobWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.applyJobContainer {
+  background-color: rgb(250, 250, 147);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  width: 100%;
+  max-width: 1000px;
+  gap: 20px 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 916px) {
+  .applyJobContainer {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 100px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .applyJobContainer {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    gap: 15px;
+  }
+  
+  .pageContainer {
+    padding: 0 10px; /* Reduce padding on very small screens */
+  }
 }
