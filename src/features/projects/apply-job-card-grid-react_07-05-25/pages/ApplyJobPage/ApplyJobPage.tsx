@@ -6,17 +6,27 @@ const ApplyJobPage = () => {
     return (
         <>
             <div className={styles.pageContainer}>
-                <div className={styles.gridContainer}>
+                <div className={styles.gridSection}>
+                    <div className={styles.gridContainer}>
 
-                    {/*   {jobData.map((job) => {
+
+                        {/*   {jobData.map((job) => {
                     return (
                         <div key={job.jobId}>
                             <ApplyJobCard job={job} />
                         </div>
                     )
                 })} */}
-                    <ApplyJobCard job={jobData[0]} />
+                        <ApplyJobCard job={jobData[0]} />
+                        <ApplyJobCard job={jobData[0]} />
+                        <ApplyJobCard job={jobData[0]} />
+                        <ApplyJobCard job={jobData[0]} />
+                        <ApplyJobCard job={jobData[0]} />
+                        <ApplyJobCard job={jobData[0]} />
+
+                    </div>
                 </div>
+
             </div>
         </>
     )
