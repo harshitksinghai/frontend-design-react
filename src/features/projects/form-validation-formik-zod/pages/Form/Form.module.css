@@ -24,7 +24,7 @@
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
 }
@@ -34,11 +34,37 @@
     flex-direction: column;
 }
 
+.emailField {
+    grid-column: span 2;
+}
+
 h3 {
+    margin-left: 1rem;
     font-size: 1rem;
 }
 
 .input {
     width: 100%;
+    outline: none;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1px solid #222;
+    padding-left: 1rem;
+    font-size: 1rem;
 }
+
+.submit {
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    align-self: self-end;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+
 

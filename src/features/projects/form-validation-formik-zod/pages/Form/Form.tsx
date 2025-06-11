@@ -10,18 +10,22 @@ const Form = () => {
                     </div>
                     <div className={styles.content}>
                         <div className={styles.field}>
-                            <h3>Email</h3>
-                            <input type='email' name='email' className={styles.input} placeholder='Enter Email' />
+                            <h3>First Name</h3>
+                            <input type='text' className={styles.input} placeholder='Enter First Name' />
                         </div>
                         <div className={styles.field}>
-                            <h3>Email</h3>
-                            <input type='email' name='email' className={styles.input} placeholder='Enter Email' />
+                            <h3>Middle Name</h3>
+                            <input type='text' className={styles.input} placeholder='Enter Middle Name' />
                         </div>
                         <div className={styles.field}>
-                            <h3>Email</h3>
-                            <input type='email' name='email' className={styles.input} placeholder='Enter Email' />
+                            <h3>Last Name</h3>
+                            <input type='text' className={styles.input} placeholder='Enter Last Name' />
                         </div>
-
+                        <div className={`${styles.field} ${styles.emailField}`}>
+                            <h3>Email</h3>
+                            <input type='email' className={styles.input} placeholder='Enter Email' />
+                        </div>
+                        <button className={styles.submit}>Submit</button>
                     </div>
                 </div>
             </div>
