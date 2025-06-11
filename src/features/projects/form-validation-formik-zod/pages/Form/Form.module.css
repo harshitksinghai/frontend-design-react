@@ -1,0 +1,44 @@
+.pageContainer {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    max-width: 800px;
+    width: 100%;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    border-bottom: 1px solid #222;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.input {
+    width: 100%;
+}
+
