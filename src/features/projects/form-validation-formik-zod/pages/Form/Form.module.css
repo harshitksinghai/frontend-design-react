@@ -24,7 +24,7 @@
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
 }
@@ -34,8 +34,20 @@
     flex-direction: column;
 }
 
-.emailField {
+.nameField {
     grid-column: span 2;
+}
+.dobField {
+    grid-column: span 3;
+}
+.phField {
+    grid-column: span 3;
+}
+.emailField {
+    grid-column: span 4;
+}
+.passField {
+    grid-column: span 3;
 }
 
 h3 {
@@ -49,7 +61,7 @@ h3 {
     height: 3rem;
     border-radius: 1rem;
     border: 1px solid #222;
-    padding-left: 1rem;
+    padding: 0 1rem;
     font-size: 1rem;
 }
 
@@ -64,6 +76,7 @@ h3 {
     align-self: self-end;
     margin-bottom: 2px;
     cursor: pointer;
+    grid-column: 5 / span 2;
 }
 
 
