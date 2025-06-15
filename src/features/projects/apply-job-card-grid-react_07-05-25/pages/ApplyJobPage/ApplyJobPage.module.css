@@ -23,10 +23,11 @@
 .applyJobContainer {
   background-color: rgb(250, 250, 147);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  grid-template-columns: repeat(auto-fill, 280px);
+  grid-template-rows: repeat(auto-fill, 300px);
   width: 100%;
   max-width: 1000px;
-  gap: 20px 10px;
+  gap: 20px;
 }
 
 /* Media queries for responsive design */

@@ -1,0 +1,89 @@
+.pageContainer {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    max-width: 900px;
+    width: 100%;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    border-bottom: 1px solid #222;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameField {
+    grid-column: span 2;
+}
+.dobField {
+    grid-column: span 3;
+}
+.phField {
+    grid-column: span 3;
+}
+.emailField {
+    grid-column: span 4;
+}
+.passField {
+    grid-column: span 3;
+}
+
+h3 {
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1px solid #222;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.submit {
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    align-self: self-end;
+    margin-bottom: 2px;
+    cursor: pointer;
+    grid-column: 5 / span 2;
+}
+
+.errorText {
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+
+
