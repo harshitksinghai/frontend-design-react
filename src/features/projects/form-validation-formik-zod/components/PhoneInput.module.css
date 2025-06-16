@@ -13,7 +13,7 @@
     width: 15%;
     position: relative;
     background-color: #f8f8f8;
-    
+    border-radius: 1rem;
 }
 
 .countryCodeButton {
