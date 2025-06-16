@@ -1,5 +1,5 @@
 .pageContainer {
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -83,6 +83,58 @@ h3 {
     color: red;
     font-size: 0.8rem;
     margin-left: 1rem;
+}
+
+@media only screen and (max-width: 750px) {
+    .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .nameField {
+        grid-column: span 2;
+    }
+    .dobField {
+        grid-column: span 2;
+    }
+    .phField {
+        grid-column: span 2;
+    }
+    .emailField {
+        grid-column: span 2;
+    }
+    .passField {
+        grid-column: span 2;
+    }
+    .submit {
+        grid-column: span 4;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .nameField {
+        grid-column: span 2;
+    }
+    .dobField {
+        grid-column: span 2;
+    }
+    .phField {
+        grid-column: span 2;
+    }
+    .emailField {
+        grid-column: span 2;
+    }
+    .passField {
+        grid-column: span 2;
+    }
+    .submit {
+        grid-column: span 2;
+    }
 }
 
 
